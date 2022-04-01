@@ -1,7 +1,3 @@
-// import Image from 'next/image' // See: <https://nextjs.org/docs/basic-features/image-optimization>
-
-// import twitterLogo from '../assets/twitter-logo.svg'
-
 import '../styles/app.css';
 
 export default function Footer() {
