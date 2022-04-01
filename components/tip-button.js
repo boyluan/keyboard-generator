@@ -1,10 +1,7 @@
-// These is a hook
-// useState: allows you to keep up with local states
 import { useState } from "react";
 
 import SecondaryButton from "./secondary-button";
 
-// 'ethers' is the library we'll use to get a wallet instance
 import { ethers } from "ethers";
 
 import abi from "../utils/Keyboards.json";
@@ -16,9 +13,7 @@ export default function TipButton({ keyboardsContract, index }) {
     const [mining, setMining] = useState(false)
 
     const submitTip = async (e) => {
-        // We now update the line below from '(!ethereum) to -> (!keyboardsContract)
         if (!keyboardsContract) {
-            // console.error('Ethereum object is required to submit a tip'); {{ DEFUNCT }}
             console.error('KeyboardsContract object is required to submit a tip');
             return;
         }
