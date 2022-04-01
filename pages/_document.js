@@ -4,8 +4,6 @@ import Footer from '../components/footer'
 
 import Header from '../components/header'
 
-import '../styles/app.css';
-
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx)
