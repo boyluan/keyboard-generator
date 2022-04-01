@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.font-loader {
+    font-family: 'IBM Plex Mono', 'serif';
+}

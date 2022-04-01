@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    animation: {
+      spin: "spin 1s linear infinite"
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),
