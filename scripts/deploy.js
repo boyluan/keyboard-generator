@@ -9,8 +9,6 @@ async function main() {
     console.log("We got the keyboards!", keyboards);
 }
 
-// Recommended pattern, in order to be able to use async/await everywhere
-// And to properly handle errors
 main()
 .then(() => process.exit(0))
 .catch((error) => {
