@@ -4,7 +4,7 @@ import Footer from '../components/footer'
 
 import Header from '../components/header'
 
-import '../components/meta-mask-account-provider.js'
+import MetaMaskAccountProvider from '../components/meta-mask-account-provider.js'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
