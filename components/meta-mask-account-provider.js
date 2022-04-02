@@ -1,11 +1,12 @@
 import { useState, useEffect, createContext, useContext } from "react";
-import { networks } from '../utils/networks';
+
 
 const MetaMaskAccountContext = createContext();
 
 export default function MetaMaskAccountProvider({children}) {
-    const [ethereum, setEthereum] = useState(undefined);
-    const [connectedAccount, setConnectedAccount] = useState(undefined);
+    const [ethereum, setEthereum] = useState(null);
+    const [connectedAccount, setConnectedAccount] = useState(null);
+    console.log("hello")
 
 	const [network, setNetwork] = useState('');
 
@@ -13,10 +14,11 @@ export default function MetaMaskAccountProvider({children}) {
         if(window.ethereum) {
             window.ethereum.on('chainChanged', (_chainId) => window.location.reload());
             const chainId = await window.ethereum.request({ method: 'eth_chainId' });
-            setNetwork(networks[chainId]);
+            // setNetwork(networks[chainId]);
             const rinkebyId = '0x4';
             if(chainId === rinkebyId) {
                 setEthereum(window.ethereum);
+            
             } else {
                 alert('Please use Rinkeby network');
             }
@@ -52,10 +54,10 @@ export default function MetaMaskAccountProvider({children}) {
         handleAccounts(accounts);
     };
 
-    const value = {ethereum, connectedAccount, connectAccount};
+    const value = {ethereum, connectAccount, connectedAccount};
 
     return (
-        <MetaMaskAccountContext.Provider value={value}>
+        <MetaMaskAccountContext.Provider value={ {ethereum, connectedAccount, connectedAccount} }>
             {children}
         </MetaMaskAccountContext.Provider>
     )
