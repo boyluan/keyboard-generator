@@ -1,6 +1,9 @@
 import '../styles/globals.css'
 import Header from '../components/header'
+import Footer from '../components/footer'
 import '../styles/app.css'
+
+import MetaMaskAccountProvider from '../components/meta-mask-account-provider.js'
 
 // import ethLogo from '../assets/ethlogo.png';
 
