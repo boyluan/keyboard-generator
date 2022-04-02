@@ -14,6 +14,7 @@ export default function MetaMaskAccountProvider({children}) {
             window.ethereum.on('chainChanged', (_chainId) => window.location.reload());
             const chainId = await window.ethereum.request({ method: 'eth_chainId' });
             setNetwork(networks[chainId]);
+            const rinkebyId = '0x4';
             if(chainId === rinkebyId) {
                 setEthereum(window.ethereum);
             } else {
@@ -50,7 +51,7 @@ export default function MetaMaskAccountProvider({children}) {
         const accounts = await ethereum.request({ method: 'eth_requestAccounts' });
         handleAccounts(accounts);
     };
-	
+
     const value = {ethereum, connectedAccount, connectAccount};
 
     return (
