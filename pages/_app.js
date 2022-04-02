@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-
+import Header from '../components/header'
 import '../styles/app.css'
 
 // import ethLogo from '../assets/ethlogo.png';
@@ -17,8 +17,10 @@ function MyApp({ Component, pageProps }) {
     // Here, we're wrapping our pages with the provider
     // And this gives them access to this data
     <MetaMaskAccountProvider>
+      <Header/>
       <Toaster />
       <Component {...pageProps} />
+
     </MetaMaskAccountProvider>
   )
 }
