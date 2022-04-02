@@ -19,7 +19,7 @@ header{
   flex-direction: row;
   justify-content: space-between;
   /* padding: 10px 10px 10px 10px; */
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Mono', serif;
   font-size: 50px;
   font-weight: bold;
   color: rgb(49, 46, 129);
@@ -57,7 +57,7 @@ header{
   /* color: #CCD0D1; */
   color: #000000;
   font-weight: bold;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Mono', serif;
   font-size: 18px;
   padding-left: 10px;
 }
@@ -79,7 +79,7 @@ header{
   font-weight: bold;
   text-decoration: none;
   padding-left: 10px;
-  font-family: 'IBM Plex Mono', monospace;
+  font-family: 'IBM Plex Mono', serif;
 }
 
 /* .Footer {
