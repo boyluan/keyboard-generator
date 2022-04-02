@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 export default function Header() {
 
-    const { ethereum, connectedAccount } = useMetaMaskAccount();
+    const connectedAccount = useMetaMaskAccount();
    
     useEffect(() => {
         console.log("dddddd", connectedAccount)
