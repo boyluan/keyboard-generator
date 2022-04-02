@@ -20,7 +20,7 @@ header{
   justify-content: space-between;
   /* padding: 10px 10px 10px 10px; */
   font-family: 'IBM Plex Mono', serif;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: bolder;
   color: rgb(49, 46, 129);
   opacity: 1;
@@ -58,7 +58,7 @@ header{
   color: #000000;
   font-weight: bold;
   font-family: 'IBM Plex Mono', serif;
-  font-size: 18px;
+  font-size: 15px;
   padding-left: 10px;
 }
 
@@ -75,7 +75,7 @@ header{
 
 .footer-text {
   color: #000000;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
   text-decoration: none;
   padding-left: 10px;
