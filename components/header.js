@@ -5,6 +5,8 @@ import { useMetaMaskAccount } from '../components/meta-mask-account-provider.js'
 
 import { useState, useEffect } from "react";
 
+import '../styles/app.css';
+
 export default function Header() {
 
     const connectedAccount = useMetaMaskAccount();
