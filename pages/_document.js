@@ -18,8 +18,7 @@ class MyDocument extends Document {
           <main className='max-w-3xl mx-auto'>
             <link
             as="font"
-            rel="stylesheet"
-            crossOrigin=""
+            rel="preload"
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap"
             />
             <Header />
@@ -35,3 +34,4 @@ class MyDocument extends Document {
 }
 
 export default MyDocument
+
