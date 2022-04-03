@@ -1,8 +1,10 @@
+// import Image from 'next/image' // See: <https://nextjs.org/docs/basic-features/image-optimization>
+
 import '../styles/app.css';
 
 export default function Footer() {
   // constants
-  const TWITTER_HANDLE = 'artbybloc';
+  const TWITTER_HANDLE = 'awoldavi';
   const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`
 
   const imagePath = `/assets/twitter-logo.svg`;
