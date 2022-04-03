@@ -1,10 +1,12 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
 
 import Footer from '../components/footer'
-import MetaMaskAccountProvider from '../components/meta-mask-account-provider.js'
-import Header from '../components/header'
 
-import '../components/meta-mask-account-provider.js'
+// import Header from '../components/header'
+
+import MetaMaskAccountProvider from '../components/meta-mask-account-provider'
+
+import '../components/meta-mask-account-provider'
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -14,7 +16,6 @@ class MyDocument extends Document {
 
   render() {
     return (
-
       <Html>
         <MetaMaskAccountProvider>
         <Head />
@@ -25,9 +26,7 @@ class MyDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap"
             />
-
             <Main />
-            
           </main>
           <Footer />
           <NextScript />
@@ -35,7 +34,6 @@ class MyDocument extends Document {
         </body>
         </MetaMaskAccountProvider>
       </Html>
-      
     )
   }
 }
