@@ -14,7 +14,11 @@ import { ethers } from "ethers";
 
 import addressesEqual from "../utils/addressesEqual";
 
-import { UserCircleIcon } from "@heroicons/react/solid"
+// import { UserIcon } from "@heroicons/react/solid"; // See Link: <https://heroicons.com/>
+
+import { TagIcon } from "@heroicons/react/outline"; // See Link: <https://heroicons.com/>
+
+// import { UserIcon } from "@heroicons/react/outline"; // See Link: <https://heroicons.com/>
 
 import TipButton from "../components/tip-button";
 
@@ -63,7 +67,7 @@ export default function Home() {
   // As it tells our app i) what functions can be called ii) how they can be called iii) and what they return
 
   // const contractAddress = '0xf7f6c3b5c6e99C3150054deFF9c7C700F62E37c3' {{ DEFUNCT }}
-  const contractAddress = '0x5B262c3d59F61d844f705C23aE7A7e491F2416de';
+  const contractAddress = '0x4c3E130BBC0930896C28AbFABAe2d600309dfD64';
   const contractABI = abi.abi;
 
   // The 'handAccounts' function just gets us the first account, if there are any
@@ -235,7 +239,7 @@ export default function Home() {
                 <Keyboard key={i} kind={kind} isPBT={isPBT} filter={filter} />
                 <span className="absolute top-1 right-6">
                   {addressesEqual(owner, connectedAccount) ?
-                    <UserCircleIcon className="h-5 w-5 text-indigo-100" /> :
+                    <TagIcon className="h-5 w-5 text-black" /> :
                     // <TipButton ethereum={ethereum} index={i} /> {{ DEFUNCT }}
                     <TipButton keyboardsContract={keyboardsContract} index={i} />
                   }
