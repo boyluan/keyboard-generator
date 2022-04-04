@@ -10,7 +10,7 @@ import { ethers } from "ethers";
 import abi from "../utils/Keyboards.json";
 
 export default function TipButton({ keyboardsContract, index }) {
-    const contractAddress = '0x5B262c3d59F61d844f705C23aE7A7e491F2416de';
+    const contractAddress = '0x4c3E130BBC0930896C28AbFABAe2d600309dfD64';
     const contractABI = abi.abi;
 
     const [mining, setMining] = useState(false)
