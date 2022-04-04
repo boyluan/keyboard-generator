@@ -19,7 +19,7 @@ class MyDocument extends Document {
       <Html>
         <MetaMaskAccountProvider>
         <Head />
-        <body className='bg-gradient-to-r from-pink-300 via-purple-300 to-indigo-400'>
+        <body className='bg-gradient-to-r from-gray-400 via-red-100 to-blue-100'>
           <main className='max-w-3xl mx-auto'>
             <link
             as="font"
