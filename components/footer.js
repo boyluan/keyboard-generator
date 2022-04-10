@@ -4,7 +4,7 @@ import '../styles/app.css';
 
 export default function Footer() {
   // constants
-  const TWITTER_HANDLE = 'awoldavi';
+  const TWITTER_HANDLE = 'boyluan';
   const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`
 
   const imagePath = `/assets/twitter-logo.svg`;
